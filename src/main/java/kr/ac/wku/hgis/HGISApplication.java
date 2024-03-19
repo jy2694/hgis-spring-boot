@@ -1,4 +1,4 @@
-package io.cloudtype.Demo;
+package kr.ac.wku.hgis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package io.cloudtype.Demo;
+package kr.ac.wku.hgis;
 
-import io.cloudtype.Demo.entity.City;
-import io.cloudtype.Demo.repository.CityRepository;
+import kr.ac.wku.hgis.entity.City;
+import kr.ac.wku.hgis.repository.CityRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

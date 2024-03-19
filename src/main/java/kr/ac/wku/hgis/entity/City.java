@@ -1,4 +1,4 @@
-package io.cloudtype.Demo.entity;
+package kr.ac.wku.hgis.entity;
 
 import lombok.*;
 
@@ -12,21 +12,22 @@ import javax.persistence.Id;
 @Builder
 @AllArgsConstructor
 @Entity
-public class School {
+public class City {
 
     @Id
     @GeneratedValue
     private Long id;
 
     @Column(nullable = false)
+    private String parent;
+
+    @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
-    private String type;
+    private String polygon;
 
     @Column(nullable = false)
-    private String address;
+    private Long coordinateLength;
 
-    @Column(nullable = false)
-    private Long city;
 }
