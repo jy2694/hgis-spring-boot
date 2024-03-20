@@ -7,7 +7,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface SchoolRepository extends JpaRepository<School, Long> {
-    List<School> findByNameLike(String name);
-    List<School> findByCityLike(String city);
-    Optional<School> findByName(String name);
+    List<School> findSchoolByNameContaining(String name);
+
+    List<School> findSchoolsByCityContaining(String city);
+    Optional<School> findSchoolByName(String name);
 }

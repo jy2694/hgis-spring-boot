@@ -14,14 +14,14 @@ public class SchoolService {
     private final SchoolRepository schoolRepository;
 
     public List<School> findByNameLike(String name){
-        return schoolRepository.findByNameLike(name);
+        return schoolRepository.findSchoolByNameContaining(name);
     }
 
     public Optional<School> findByName(String name){
-        return schoolRepository.findByName(name);
+        return schoolRepository.findSchoolByName(name);
     }
 
     public List<School> findByCity(String city){
-        return schoolRepository.findByCityLike(city);
+        return schoolRepository.findSchoolsByCityContaining(city);
     }
 }

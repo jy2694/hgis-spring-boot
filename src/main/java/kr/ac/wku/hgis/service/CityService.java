@@ -15,10 +15,10 @@ public class CityService {
     private final CityRepository cityRepository;
 
     public Optional<City> findByName(String name){
-        return cityRepository.findByName(name);
+        return cityRepository.findCityByName(name);
     }
 
     public List<City> findByParent(String name){
-        return cityRepository.findByParentLike(name);
+        return cityRepository.findAllByParentContaining(name);
     }
 }
