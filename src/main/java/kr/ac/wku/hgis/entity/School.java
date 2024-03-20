@@ -28,5 +28,11 @@ public class School {
     private String address;
 
     @Column(nullable = false)
-    private Long city;
+    private String city;
+
+    @Column(nullable = false)
+    private Double latitude;
+
+    @Column(nullable = false)
+    private Double longitude;
 }
