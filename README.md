@@ -15,7 +15,33 @@
 
 ### ⭐️ Software Architecture
 
+![](https://github.com/jy2694/hgis-spring-boot/blob/main/architecture.png?raw=true)
 
+---
+
+### 💿 Database
+
+1. **City** Table Description
+
+| Field             | Type         | Null | Key | Default | Extra |
+|-------------------|--------------|------|-----|---------|-------|
+| id                | bigint(20)   | NO   | PRI | NULL    |       |
+| coordinate_length | bigint(20)   | NO   |     | NULL    |       |
+| name              | varchar(255) | NO   |     | NULL    |       |
+| parent            | varchar(255) | NO   |     | NULL    |       |
+| polygon           | varchar(255) | NO   |     | NULL    |       |
+
+2. **School** Table Description
+
+| Field     | Type         | Null | Key | Default | Extra |
+|-----------|--------------|------|-----|---------|-------|
+| id        | bigint(20)   | NO   | PRI | NULL    |       |
+| address   | varchar(255) | NO   |     | NULL    |       |
+| city      | bigint(20)   | NO   |     | NULL    |       |
+| name      | varchar(255) | NO   |     | NULL    |       |
+| type      | varchar(255) | NO   |     | NULL    |       |
+| latitude  | double       | NO   |     | NULL    |       |
+| longitude | double       | NO   |     | NULL    |       |
 
 ---
 
