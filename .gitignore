@@ -1,5 +1,6 @@
 HELP.md
 .gradle
+hgis-spring-boot.yaml
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/

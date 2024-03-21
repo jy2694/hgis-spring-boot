@@ -14,8 +14,8 @@ public class CityService {
 
     private final CityRepository cityRepository;
 
-    public Optional<City> findByName(String name){
-        return cityRepository.findCityByName(name);
+    public Optional<City> findByNameAndParent(String name, String parent){
+        return cityRepository.findCityByNameAndParent(name, parent);
     }
 
     public List<City> findByParent(String name){

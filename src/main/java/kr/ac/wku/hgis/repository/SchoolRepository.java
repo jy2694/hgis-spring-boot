@@ -9,6 +9,7 @@ import java.util.Optional;
 public interface SchoolRepository extends JpaRepository<School, Long> {
     List<School> findSchoolByNameContaining(String name);
 
-    List<School> findSchoolsByCityContaining(String city);
+    List<School> findSchoolByAddressStartsWith(String city);
+
     Optional<School> findSchoolByName(String name);
 }

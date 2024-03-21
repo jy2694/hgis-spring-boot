@@ -13,12 +13,8 @@ public class SchoolController {
     private final SchoolService schoolService;
 
     @GetMapping("api/school")
-    public ResponseEntity<Object> getSchool(@RequestParam(required = false) String name, @RequestParam(required = false) String city){
-        if(name == null && city == null) return ResponseEntity.notFound().build();
-        if(name != null){
-            return ResponseEntity.ok(schoolService.findByNameLike(name));
-        } else {
-            return ResponseEntity.ok(schoolService.findByCity(city));
-        }
+    public ResponseEntity<Object> getSchool(@RequestParam(required = false) String parent, @RequestParam(required = false) String name){
+        if(name == null || parent == null) return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(schoolService.findByCity(parent, name));
     }
 }
