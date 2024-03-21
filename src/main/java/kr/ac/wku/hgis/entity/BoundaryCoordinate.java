@@ -2,25 +2,25 @@ package kr.ac.wku.hgis.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
 @AllArgsConstructor
 @Entity
-public class City {
+public class BoundaryCoordinate {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String parent;
+    private Double latitude;
 
     @Column(nullable = false)
-    private String name;
+    private Double longitude;
+
+    @Column(nullable = false)
+    private Long city;
 }

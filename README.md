@@ -1,6 +1,6 @@
 # HGIS - Spring boot
 ### Highschool Geographic Information System - Spring boot
-![](https://img.shields.io/badge/OpenJDK-17-000000?style=flat-square&logo=openjdk&logoColor=white)
+![](https://img.shields.io/badge/OpenJDK-19-000000?style=flat-square&logo=openjdk&logoColor=white)
 ![](https://img.shields.io/badge/Spring_boot-2.7.9-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![](https://img.shields.io/badge/Lombok-1.18.30-red?style=flat-square)
 ![](https://img.shields.io/badge/MariaDB_Client-3.3.3-003545?style=flat-square&logo=mariadb&logoColor=white)
