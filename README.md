@@ -36,7 +36,7 @@
 
 | Field     | Type         | Null | Key | Default | Extra |
 |-----------|--------------|------|-----|---------|-------|
-| id        | bigint(20)   | NO   | PRI | NULL    |       |
+| id        | varchar(255) | NO   | PRI | NULL    |       |
 | address   | varchar(255) | NO   |     | NULL    |       |
 | city      | bigint(20)   | NO   |     | NULL    |       |
 | name      | varchar(255) | NO   |     | NULL    |       |
